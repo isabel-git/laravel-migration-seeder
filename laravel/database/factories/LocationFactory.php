@@ -10,6 +10,6 @@ $factory->define(Location::class, function (Faker $faker) {
         
         'name'      =>  $faker -> city(),
         'address'   =>  $faker -> address(),
-        'employe'   =>  rand(1, 100),
+        'employees_number'   =>  rand(1, 100),
     ];
 });
