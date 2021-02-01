@@ -4,6 +4,9 @@
     <h1>Brands</h1>
 
     @foreach ($brands as $brand)
-        <li>{{ $brand -> name }}</li>
+        <a href="{{ route('brand-show', $brand -> id) }}">
+            
+            <li>{{ $brand -> name }}</li>
+        </a>
     @endforeach
 @endsection
