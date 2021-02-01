@@ -13,5 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'LocationController@index') 
+Route::get('/locations', 'LocationController@index') //locations
     -> name('locations');
+
+Route::get('/brands', 'BrandController@index') //brands
+    -> name('brands');

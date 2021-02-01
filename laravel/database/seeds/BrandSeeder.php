@@ -1,9 +1,9 @@
 <?php
 
-use App\Brend;
+use App\Brand;
 use Illuminate\Database\Seeder;
 
-class BrendSeeder extends Seeder
+class BrandSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class BrendSeeder extends Seeder
      */
     public function run()
     {
-       factory(Brend::class, 10) -> create(); 
+       factory(Brand::class, 10) -> create(); 
     }
 }

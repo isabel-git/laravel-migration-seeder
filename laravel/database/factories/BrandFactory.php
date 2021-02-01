@@ -2,14 +2,14 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Brend;
+use App\Brand;
 use Faker\Generator as Faker;
 
-$factory->define(Brend::class, function (Faker $faker) {
+$factory->define(Brand::class, function (Faker $faker) {
     return [
 
         'name'              =>  $faker -> company(),
-        'logo'              =>  $faker -> url(),
+        'logo'              =>  $faker -> imageUrl(),
         'locations_number'  =>  rand(1, 90),
     ];
 });
