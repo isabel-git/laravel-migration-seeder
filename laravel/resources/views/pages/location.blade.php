@@ -6,8 +6,10 @@
     <ul>
 
         @foreach ($locations as $location)
-            <li>{{ $location -> name}}</li>
 
+            <a href="{{ route('location-show', $location -> id) }}">
+                <li>{{ $location -> name}}</li>
+            </a>
         @endforeach
 
     </ul>

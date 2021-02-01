@@ -14,4 +14,10 @@ class LocationController extends Controller
 
         return view('pages.location', compact('locations'));
     }
+    public function show($id) {
+
+        $location = Location::findOrFail($id);
+
+        return view('pages.location-show', compact('location'));
+    }
 }
